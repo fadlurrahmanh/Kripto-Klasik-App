@@ -11,22 +11,22 @@ history = []
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("templates\index.html")
 
 
 @app.route("/caesar")
 def caesar():
-    return render_template("caesar.html")
+    return render_template("templates\caesar.html")
 
 
 @app.route("/vigenere")
 def vigenere():
-    return render_template("vigenere.html")
+    return render_template("templates\vigenere.html")
 
 
 @app.route("/affine")
 def affine():
-    return render_template("affine.html")
+    return render_template("templates\affine.html")
 
 @app.route("/affine/process", methods=["POST"])
 def process_affine():
@@ -99,7 +99,7 @@ def process_affine():
 
 @app.route("/hill")
 def hill():
-    return render_template("hill.html")
+    return render_template("templates\hill.html")
 
 # =========================
 # HILL PROCESS
